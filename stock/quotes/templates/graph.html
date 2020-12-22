@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<center>
+
+<h3>({{ symbol }})</h3>
+</center>
+
+
+<div style="width:600;height:500">
+ {% autoescape off %}
+{{ plot| safe}}
+  {% endautoescape %}
+</div>
+
+{% endblock %}
